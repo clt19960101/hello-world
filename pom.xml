@@ -14,6 +14,9 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <sonar.login>admin</sonar.login>
         <sonar.password>admin</sonar.password>
+        <sonar.host.url>http://localhost:9000</sonar.host.url>
+        <sonar.language>java</sonar.language>
+        <sonar.scm.provider>git</sonar.scm.provider>
     </properties>
     <profiles>
         <profile>
@@ -33,7 +36,7 @@
             <plugin>
                 <groupId>org.sonarsource.scanner.maven</groupId>
                 <artifactId>sonar-maven-plugin</artifactId>
-                <version>3.4.0.905</version>
+                <version>3.2</version>
             </plugin>
         </plugins>
     </build>
